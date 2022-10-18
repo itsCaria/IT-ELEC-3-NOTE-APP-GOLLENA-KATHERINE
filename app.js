@@ -14,16 +14,16 @@ if(text[2] == 'add') {
         title: text[4],
         body: text[5]
     }
-    var oldNote = read();
+    var oldNote = read()
     add(note, oldNote)
 }
 if(text[2] == 'read') {
-    const present = require('./present');
+    const present = require('./present')
 
-    present(read());
+    present(read())
 }
 if(text[2] === 'delete') {
-    let id = data[3];
+    let id = text[3];
     let oldNote = read();
     let del = require('./del');
     del(id,oldNote);

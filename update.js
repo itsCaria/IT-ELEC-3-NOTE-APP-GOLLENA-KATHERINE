@@ -1,4 +1,7 @@
 const fs = require('fs')
+
+const text = process.argv
+
 const update = function(note, oldNote){
     const updateNote = JSON.parse(oldNote)
 
